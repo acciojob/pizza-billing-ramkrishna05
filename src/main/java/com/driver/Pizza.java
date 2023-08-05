@@ -34,7 +34,7 @@ public class Pizza {
         cheeseprice=80;
         paperbagprice=20;
         totalprice=baseprice;
-        bill="Base Price Of The Pizza:"+totalprice+"\n";
+        bill="Base Price Of The Pizza:"+baseprice+"\n";
 
 
     }
@@ -67,6 +67,7 @@ public class Pizza {
         if(istakeway==false)
         {
             totalprice=totalprice+paperbagprice;
+            istakeway=true;
         }
 
     }
@@ -83,6 +84,10 @@ public class Pizza {
             if(istopping==true)
             {
                 bill=bill+"Extra Toppings Added: "+toppingprice+"\n";
+            }
+            if(istakeway=true)
+            {
+                bill=bill+"Paperbag Added: "+paperbagprice+"\n";
             }
             bill=bill+"Total Price: "+totalprice+"\n";
         }
