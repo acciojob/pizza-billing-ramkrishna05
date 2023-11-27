@@ -85,7 +85,7 @@ public class Pizza {
             {
                 bill=bill+"Extra Toppings Added: "+toppingprice+"\n";
             }
-            if(istakeway=true)
+            if(istakeway==true)
             {
                 bill=bill+"Paperbag Added: "+paperbagprice+"\n";
             }
